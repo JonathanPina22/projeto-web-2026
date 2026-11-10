@@ -7,9 +7,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
 
+  <!-- CORPO DA PÁGINA: fundo preto e texto branco como base visual do site. -->
   <body class="bg-black text-white">
-    <!-- CABEÇALHO -->
+    <!-- CABEÇALHO: contém o logótipo e o menu de navegação. -->
     <header class="bg-[#0b0f14] p-4">
+      <!-- Container centralizado; passa de coluna para linha em ecrãs médios (md). -->
       <div
         class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 md:flex-row"
       >
@@ -35,8 +37,9 @@
       </div>
     </header>
 
+    <!-- CONTEÚDO PRINCIPAL: define a largura máxima e o espaçamento da página. -->
     <main class="mx-auto max-w-7xl px-4 py-8 sm:px-6">
-      <!-- APRESENTAÇÃO DA EQUIPA -->
+      <!-- APRESENTAÇÃO DA EQUIPA: identifica o clube, a cidade e a competição. -->
       <section
         class="mb-10 rounded-xl border border-[#252a32] bg-[#0b0f14] p-6 sm:p-10"
       >
@@ -70,7 +73,7 @@
         </div>
       </section>
 
-      <!-- PLANTEL -->
+      <!-- PLANTEL: cartões individuais com número, nome e informação de cada jogador. -->
       <section class="mb-12">
         <div class="mb-6">
           <h2 class="text-2xl font-bold">
@@ -83,6 +86,7 @@
           </p>
         </div>
 
+        <!-- Grelha responsiva: uma coluna em telemóvel, duas em tablet e três em ecrãs grandes. -->
         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <article class="rounded-lg border border-[#252a32] bg-[#0b0f14] p-5">
             <div
@@ -125,7 +129,7 @@
         </div>
       </section>
 
-      <!-- ESTATÍSTICAS -->
+      <!-- ESTATÍSTICAS: tabela comparativa dos indicadores individuais dos jogadores. -->
       <section class="mb-12">
         <div class="mb-6">
           <h2 class="text-2xl font-bold">
@@ -138,6 +142,7 @@
           </p>
         </div>
 
+        <!-- Permite deslocar a tabela horizontalmente quando não cabe no ecrã. -->
         <div class="overflow-x-auto rounded-lg border border-[#252a32]">
           <table class="w-full min-w-[550px] text-left">
             <thead class="bg-[#0b0f14] text-[#e50920]">
@@ -184,7 +189,7 @@
         </p>
       </section>
 
-      <!-- INFORMAÇÃO ADICIONAL -->
+      <!-- INFORMAÇÃO ADICIONAL: texto de apresentação e ligação para a página de jogos. -->
       <section
         class="mb-10 rounded-xl border border-[#252a32] bg-[#0b0f14] p-6"
       >
@@ -207,7 +212,7 @@
       </section>
     </main>
 
-    <!-- RODAPÉ -->
+    <!-- RODAPÉ: apresenta a identificação do website e a temática. -->
     <footer class="border-t border-[#252a32] bg-[#0b0f14] p-6">
       <div
         class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 sm:flex-row"

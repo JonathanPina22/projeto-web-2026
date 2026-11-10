@@ -7,8 +7,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
 
+  <!-- CORPO DA PÁGINA: fundo preto e texto branco como base visual do site. -->
   <body class="bg-black text-white">
+    <!-- CABEÇALHO: contém o logótipo e o menu de navegação. -->
     <header class="bg-[#0b0f14] p-4">
+      <!-- Container centralizado; em ecrãs pequenos organiza os elementos em coluna e, a partir de md, em linha. -->
       <div
         class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 md:flex-row"
       >
@@ -40,7 +43,9 @@
       </div>
     </header>
 
+    <!-- CONTEÚDO PRINCIPAL: limita a largura e aplica espaçamento lateral e vertical responsivo. -->
     <main class="mx-auto max-w-7xl px-4 py-6 sm:px-6">
+      <!-- DESTAQUE INICIAL: apresenta a competição, o título e o acesso aos jogos. -->
       <section
         class="rounded-xl border border-[#252a32] bg-[#0b0f14] p-5 sm:p-8 md:p-10"
       >
@@ -70,7 +75,7 @@
 
           <a href="#" class="text-[#e50920]"> Ver todos os jogos → </a>
         </div>
-
+        <!-- Uma coluna no telemóvel, duas em ecrãs médios e quatro em ecrãs grandes. -->
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
           <div class="rounded-lg border border-[#252a32] bg-[#0b0f14] p-5">
             <p class="mb-4 text-sm text-[#e50920]">PROLIGA</p>
@@ -105,12 +110,13 @@
           </div>
         </div>
       </section>
+      <!-- CLASSIFICAÇÃO: tabela com posição, equipa, jogos, vitórias, derrotas e pontos. -->
       <section id="classificacao" class="mt-10">
         <h2 class="mb-6 text-2xl font-bold">
           <span class="text-[#e50920]"></span>
           Classificação da Proliga
         </h2>
-
+        <!-- Permite deslocar horizontalmente a tabela em ecrãs estreitos, sem partir as colunas. -->
         <div class="w-full overflow-x-auto">
           <table class="w-full min-w-[600px] text-left">
             <thead class="border-b border-[#252a32] text-[#e50920]">
@@ -173,6 +179,7 @@
           </table>
         </div>
       </section>
+      <!-- NOTÍCIAS: apresenta os destaques informativos em cartões. -->
       <section id="noticias" class="mt-10">
         <div class="mb-6 flex items-center justify-between">
           <h2 class="text-2xl font-bold">
@@ -182,7 +189,7 @@
 
           <a href="#" class="text-[#e50920]"> Ver todas as notícias → </a>
         </div>
-
+        <!-- Os cartões ficam empilhados em telemóveis e lado a lado em ecrãs médios. -->
         <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
           <article class="rounded-lg border border-[#252a32] bg-[#0b0f14] p-5">
             <p class="mb-3 text-sm font-bold text-[#e50920]">ACADÉMICA</p>
@@ -209,6 +216,7 @@
           </article>
         </div>
       </section>
+      <!-- JOGADOR EM DESTAQUE: área reservada à apresentação de um jogador da equipa. -->
       <section class="mt-10 mb-10">
         <h2 class="mb-6 text-2xl font-bold">
           <span class="text-[#e50920]">▪</span>
@@ -224,6 +232,7 @@
         </div>
       </section>
     </main>
+    <!-- RODAPÉ: identificação do projeto e área temática do website. -->
     <footer class="border-t border-[#252a32] bg-[#0b0f14] p-6">
       <div class="flex flex-col items-center justify-between gap-4 md:flex-row">
         <h2 class="text-xl font-bold text-[#e50920]">BasketHub</h2>
