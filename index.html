@@ -4,44 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baskethub</title>
-
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
 
 <body class="bg-black text-white">
 
+
 <header class="bg-[#0b0f14] p-4">
-    <div class="grid grid-cols-3 items-center">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 md:flex-row">
 
-    <div class="flex items-center gap-2">
-        <img src="logo web.png" alt="Logo BasketHub" class="h-10 w-10">
+        <!-- LOGO E NOME -->
+        <div class="flex items-center gap-2">
+            <img src="logo web.png" alt="Logo BasketHub"
+                 class="h-10 w-10">
 
-        <h1 class="text-2xl font-bold text-[#e50920]">
-            BasketHub
-        </h1>
+            <h1 class="text-2xl font-bold text-[#e50920]">
+                BasketHub
+            </h1>
+        </div>
+
+        <!-- MENU DE NAVEGAÇÃO -->
+        <nav class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm sm:text-base">
+
+            <a href="index.html" class="hover:text-[#e50920]">
+                Início
+            </a>
+
+            <a href="jogos.html" class="hover:text-[#e50920]">
+                Jogos
+            </a>
+
+            <a href="index.html#classificacao" class="hover:text-[#e50920]">
+                Classificação
+            </a>
+
+            <a href="equipa.html" class="hover:text-[#e50920]">
+                Equipa
+            </a>
+
+            <a href="index.html#noticias" class="hover:text-[#e50920]">
+                Notícias
+            </a>
+
+        </nav>
+
     </div>
-
-    <nav class="flex justify-center gap-4">
-        <a href="index.html">Início</a>
-        <a href="#jogos">Jogos</a>
-        <a href="#classificacao">Classificação</a>
-        <a href="#noticias">Notícias</a>
-    </nav>
-
-    <div></div>
-
-</div>
 </header>
-   <main class="mx-auto max-w-7xl p-6">
 
-    <section class="rounded-xl border border-[#252a32] bg-[#0b0f14] p-10">
+   <main class="mx-auto max-w-7xl px-4 py-6 sm:px-6">
+
+    <section class="rounded-xl border border-[#252a32] bg-[#0b0f14] p-5 sm:p-8 md:p-10">
 
         <p class="mb-4 font-bold text-[#e50920]">
             PROLIGA
         </p>
 
-        <h2 class="mb-4 text-4xl font-bold">
+        <h2 class="mb-4 text-3xl sm:text-4xl md:text-5xl font-bold">
             Proliga: Acompanha a
             Académica Efapel de Coimbra.
         </h2>
@@ -114,8 +133,8 @@
         Classificação da Proliga
     </h2>
 
-    <div class="overflow-x-auto">
-        <table class="w-full text-left">
+    <div class="w-full overflow-x-auto">
+         <table class="w-full min-w-[600px] text-left">
 
             <thead class="border-b border-[#252a32] text-[#e50920]">
                 <tr>
