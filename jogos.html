@@ -1,296 +1,241 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BasketHub | Jogos</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
+  </head>
 
-<body class="bg-black text-white">
-
+  <body class="bg-black text-white">
     <!-- CABEÇALHO -->
     <header class="bg-[#0b0f14] p-4">
-        <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 md:flex-row">
+      <div
+        class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 md:flex-row"
+      >
+        <div class="flex items-center gap-2">
+          <img src="logo web.png" alt="Logo BasketHub" class="h-10 w-10" />
 
-            <div class="flex items-center gap-2">
-                <img src="logo web.png" alt="Logo BasketHub"
-                     class="h-10 w-10">
-
-                <h1 class="text-2xl font-bold text-[#e50920]">
-                    BasketHub
-                </h1>
-            </div>
-
-            <nav class="flex flex-wrap justify-center gap-x-5 gap-y-3 text-sm sm:text-base">
-                <a href="index.html" class="hover:text-[#e50920]">Início</a>
-                <a href="jogos.html" class="text-[#e50920]">Jogos</a>
-                <a href="index.html#classificacao" class="hover:text-[#e50920]">Classificação</a>
-                <a href="equipa.html" class="hover:text-[#e50920]">Equipa</a>
-                <a href="index.html#noticias" class="hover:text-[#e50920]">Notícias</a>
-            </nav>
-
+          <h1 class="text-2xl font-bold text-[#e50920]">BasketHub</h1>
         </div>
+
+        <nav
+          class="flex flex-wrap justify-center gap-x-5 gap-y-3 text-sm sm:text-base"
+        >
+          <a href="index.html" class="hover:text-[#e50920]">Início</a>
+          <a href="jogos.html" class="text-[#e50920]">Jogos</a>
+          <a href="index.html#classificacao" class="hover:text-[#e50920]"
+            >Classificação</a
+          >
+          <a href="equipa.html" class="hover:text-[#e50920]">Equipa</a>
+          <a href="index.html#noticias" class="hover:text-[#e50920]"
+            >Notícias</a
+          >
+        </nav>
+      </div>
     </header>
 
     <main class="mx-auto max-w-7xl px-4 py-8 sm:px-6">
+      <!-- TÍTULO DA PÁGINA -->
+      <section
+        class="mb-10 rounded-xl border border-[#252a32] bg-[#0b0f14] p-6 sm:p-10"
+      >
+        <p class="mb-3 font-bold text-[#e50920]">PROLIGA BETCLIC</p>
 
-        <!-- TÍTULO DA PÁGINA -->
-        <section class="mb-10 rounded-xl border border-[#252a32] bg-[#0b0f14] p-6 sm:p-10">
+        <h2 class="mb-4 text-3xl font-bold sm:text-4xl">
+          Calendário e Resultados
+        </h2>
 
-            <p class="mb-3 font-bold text-[#e50920]">
-                PROLIGA BETCLIC
-            </p>
+        <p class="max-w-2xl text-gray-400">
+          Consulta os encontros da Proliga, acompanha os resultados e segue o
+          percurso da Académica Efapel de Coimbra.
+        </p>
+      </section>
 
-            <h2 class="mb-4 text-3xl font-bold sm:text-4xl">
-                Calendário e Resultados
-            </h2>
+      <!-- PRÓXIMOS JOGOS -->
+      <section class="mb-12">
+        <div class="mb-6">
+          <h2 class="text-2xl font-bold">
+            <span class="text-[#e50920]">▪</span>
+            Próximos jogos
+          </h2>
 
-            <p class="max-w-2xl text-gray-400">
-                Consulta os encontros da Proliga, acompanha os resultados
-                e segue o percurso da Académica Efapel de Coimbra.
-            </p>
+          <p class="mt-2 text-sm text-gray-400">
+            Calendário de encontros da competição.
+          </p>
+        </div>
 
-        </section>
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <article class="rounded-lg border border-[#252a32] bg-[#0b0f14] p-5">
+            <p class="mb-4 text-sm font-bold text-[#e50920]">PROLIGA</p>
 
-        <!-- PRÓXIMOS JOGOS -->
-        <section class="mb-12">
-
-            <div class="mb-6">
-                <h2 class="text-2xl font-bold">
-                    <span class="text-[#e50920]">▪</span>
-                    Próximos jogos
-                </h2>
-
-                <p class="mt-2 text-sm text-gray-400">
-                    Calendário de encontros da competição.
-                </p>
+            <div class="flex items-center justify-between gap-3">
+              <h3 class="font-bold">Académica Efapel</h3>
+              <span class="text-gray-500">VS</span>
+              <h3 class="font-bold">Adversário</h3>
             </div>
 
-            <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <div class="mt-5 border-t border-[#252a32] pt-4">
+              <p class="text-sm text-gray-400">Data: A definir</p>
+              <p class="mt-1 text-sm text-gray-400">Hora: A definir</p>
+            </div>
+          </article>
 
-                <article class="rounded-lg border border-[#252a32] bg-[#0b0f14] p-5">
+          <article class="rounded-lg border border-[#252a32] bg-[#0b0f14] p-5">
+            <p class="mb-4 text-sm font-bold text-[#e50920]">PROLIGA</p>
 
-                    <p class="mb-4 text-sm font-bold text-[#e50920]">
-                        PROLIGA
-                    </p>
-
-                    <div class="flex items-center justify-between gap-3">
-                        <h3 class="font-bold">Académica Efapel</h3>
-                        <span class="text-gray-500">VS</span>
-                        <h3 class="font-bold">Adversário</h3>
-                    </div>
-
-                    <div class="mt-5 border-t border-[#252a32] pt-4">
-                        <p class="text-sm text-gray-400">
-                            Data: A definir
-                        </p>
-                        <p class="mt-1 text-sm text-gray-400">
-                            Hora: A definir
-                        </p>
-                    </div>
-
-                </article>
-
-                <article class="rounded-lg border border-[#252a32] bg-[#0b0f14] p-5">
-
-                    <p class="mb-4 text-sm font-bold text-[#e50920]">
-                        PROLIGA
-                    </p>
-
-                    <div class="flex items-center justify-between gap-3">
-                        <h3 class="font-bold">Adversário</h3>
-                        <span class="text-gray-500">VS</span>
-                        <h3 class="font-bold">Académica Efapel</h3>
-                    </div>
-
-                    <div class="mt-5 border-t border-[#252a32] pt-4">
-                        <p class="text-sm text-gray-400">
-                            Data: A definir
-                        </p>
-                        <p class="mt-1 text-sm text-gray-400">
-                            Hora: A definir
-                        </p>
-                    </div>
-
-                </article>
-
-                <article class="rounded-lg border border-[#252a32] bg-[#0b0f14] p-5">
-
-                    <p class="mb-4 text-sm font-bold text-[#e50920]">
-                        PROLIGA
-                    </p>
-
-                    <div class="flex items-center justify-between gap-3">
-                        <h3 class="font-bold">Académica Efapel</h3>
-                        <span class="text-gray-500">VS</span>
-                        <h3 class="font-bold">Adversário</h3>
-                    </div>
-
-                    <div class="mt-5 border-t border-[#252a32] pt-4">
-                        <p class="text-sm text-gray-400">
-                            Data: A definir
-                        </p>
-                        <p class="mt-1 text-sm text-gray-400">
-                            Hora: A definir
-                        </p>
-                    </div>
-
-                </article>
-
+            <div class="flex items-center justify-between gap-3">
+              <h3 class="font-bold">Adversário</h3>
+              <span class="text-gray-500">VS</span>
+              <h3 class="font-bold">Académica Efapel</h3>
             </div>
 
-        </section>
+            <div class="mt-5 border-t border-[#252a32] pt-4">
+              <p class="text-sm text-gray-400">Data: A definir</p>
+              <p class="mt-1 text-sm text-gray-400">Hora: A definir</p>
+            </div>
+          </article>
 
-        <!-- RESULTADOS ANTERIORES -->
-        <section class="mb-12">
+          <article class="rounded-lg border border-[#252a32] bg-[#0b0f14] p-5">
+            <p class="mb-4 text-sm font-bold text-[#e50920]">PROLIGA</p>
 
-            <div class="mb-6">
-                <h2 class="text-2xl font-bold">
-                    <span class="text-[#e50920]">▪</span>
-                    Resultados anteriores
-                </h2>
-
-                <p class="mt-2 text-sm text-gray-400">
-                    Histórico de resultados da Académica.
-                </p>
+            <div class="flex items-center justify-between gap-3">
+              <h3 class="font-bold">Académica Efapel</h3>
+              <span class="text-gray-500">VS</span>
+              <h3 class="font-bold">Adversário</h3>
             </div>
 
-            <div class="overflow-x-auto rounded-lg border border-[#252a32]">
-
-                <table class="w-full min-w-[550px] text-left">
-
-                    <thead class="bg-[#0b0f14] text-[#e50920]">
-                        <tr>
-                            <th class="p-4">Data</th>
-                            <th class="p-4">Jogo</th>
-                            <th class="p-4 text-center">Resultado</th>
-                            <th class="p-4 text-center">Estado</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-
-                        <tr class="border-t border-[#252a32]">
-                            <td class="p-4 text-gray-400">A definir</td>
-                            <td class="p-4">Académica vs Adversário</td>
-                            <td class="p-4 text-center">—</td>
-                            <td class="p-4 text-center text-gray-400">Por preencher</td>
-                        </tr>
-
-                        <tr class="border-t border-[#252a32]">
-                            <td class="p-4 text-gray-400">A definir</td>
-                            <td class="p-4">Adversário vs Académica</td>
-                            <td class="p-4 text-center">—</td>
-                            <td class="p-4 text-center text-gray-400">Por preencher</td>
-                        </tr>
-
-                        <tr class="border-t border-[#252a32]">
-                            <td class="p-4 text-gray-400">A definir</td>
-                            <td class="p-4">Académica vs Adversário</td>
-                            <td class="p-4 text-center">—</td>
-                            <td class="p-4 text-center text-gray-400">Por preencher</td>
-                        </tr>
-
-                    </tbody>
-
-                </table>
-
+            <div class="mt-5 border-t border-[#252a32] pt-4">
+              <p class="text-sm text-gray-400">Data: A definir</p>
+              <p class="mt-1 text-sm text-gray-400">Hora: A definir</p>
             </div>
+          </article>
+        </div>
+      </section>
 
-        </section>
+      <!-- RESULTADOS ANTERIORES -->
+      <section class="mb-12">
+        <div class="mb-6">
+          <h2 class="text-2xl font-bold">
+            <span class="text-[#e50920]">▪</span>
+            Resultados anteriores
+          </h2>
 
-        <!-- CLASSIFICAÇÃO -->
-        <section class="mb-10">
+          <p class="mt-2 text-sm text-gray-400">
+            Histórico de resultados da Académica.
+          </p>
+        </div>
 
-            <h2 class="mb-6 text-2xl font-bold">
-                <span class="text-[#e50920]">▪</span>
-                Classificação da Proliga
-            </h2>
+        <div class="overflow-x-auto rounded-lg border border-[#252a32]">
+          <table class="w-full min-w-[550px] text-left">
+            <thead class="bg-[#0b0f14] text-[#e50920]">
+              <tr>
+                <th class="p-4">Data</th>
+                <th class="p-4">Jogo</th>
+                <th class="p-4 text-center">Resultado</th>
+                <th class="p-4 text-center">Estado</th>
+              </tr>
+            </thead>
 
-            <div class="overflow-x-auto rounded-lg border border-[#252a32]">
+            <tbody>
+              <tr class="border-t border-[#252a32]">
+                <td class="p-4 text-gray-400">A definir</td>
+                <td class="p-4">Académica vs Adversário</td>
+                <td class="p-4 text-center">—</td>
+                <td class="p-4 text-center text-gray-400">Por preencher</td>
+              </tr>
 
-                <table class="w-full min-w-[600px] text-left">
+              <tr class="border-t border-[#252a32]">
+                <td class="p-4 text-gray-400">A definir</td>
+                <td class="p-4">Adversário vs Académica</td>
+                <td class="p-4 text-center">—</td>
+                <td class="p-4 text-center text-gray-400">Por preencher</td>
+              </tr>
 
-                    <thead class="bg-[#0b0f14] text-[#e50920]">
-                        <tr>
-                            <th class="p-3">Pos.</th>
-                            <th class="p-3">Equipa</th>
-                            <th class="p-3">J</th>
-                            <th class="p-3">V</th>
-                            <th class="p-3">D</th>
-                            <th class="p-3">Pts</th>
-                        </tr>
-                    </thead>
+              <tr class="border-t border-[#252a32]">
+                <td class="p-4 text-gray-400">A definir</td>
+                <td class="p-4">Académica vs Adversário</td>
+                <td class="p-4 text-center">—</td>
+                <td class="p-4 text-center text-gray-400">Por preencher</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
 
-                    <tbody>
-                        <tr class="border-t border-[#252a32]">
-                            <td class="p-3">—</td>
-                            <td class="p-3 font-bold">Académica Efapel</td>
-                            <td class="p-3">—</td>
-                            <td class="p-3">—</td>
-                            <td class="p-3">—</td>
-                            <td class="p-3">—</td>
-                        </tr>
+      <!-- CLASSIFICAÇÃO -->
+      <section class="mb-10">
+        <h2 class="mb-6 text-2xl font-bold">
+          <span class="text-[#e50920]">▪</span>
+          Classificação da Proliga
+        </h2>
 
-                        <tr class="border-t border-[#252a32]">
-                            <td class="p-3">—</td>
-                            <td class="p-3">GALP</td>
-                            <td class="p-3">—</td>
-                            <td class="p-3">—</td>
-                            <td class="p-3">—</td>
-                            <td class="p-3">—</td>
-                        </tr>
+        <div class="overflow-x-auto rounded-lg border border-[#252a32]">
+          <table class="w-full min-w-[600px] text-left">
+            <thead class="bg-[#0b0f14] text-[#e50920]">
+              <tr>
+                <th class="p-3">Pos.</th>
+                <th class="p-3">Equipa</th>
+                <th class="p-3">J</th>
+                <th class="p-3">V</th>
+                <th class="p-3">D</th>
+                <th class="p-3">Pts</th>
+              </tr>
+            </thead>
 
-                        <tr class="border-t border-[#252a32]">
-                            <td class="p-3">—</td>
-                            <td class="p-3">AD Galomar</td>
-                            <td class="p-3">—</td>
-                            <td class="p-3">—</td>
-                            <td class="p-3">—</td>
-                            <td class="p-3">—</td>
-                        </tr>
+            <tbody>
+              <tr class="border-t border-[#252a32]">
+                <td class="p-3">—</td>
+                <td class="p-3 font-bold">Académica Efapel</td>
+                <td class="p-3">—</td>
+                <td class="p-3">—</td>
+                <td class="p-3">—</td>
+                <td class="p-3">—</td>
+              </tr>
 
-                        <tr class="border-t border-[#252a32]">
-                            <td class="p-3">—</td>
-                            <td class="p-3">Barcelos Eticol</td>
-                            <td class="p-3">—</td>
-                            <td class="p-3">—</td>
-                            <td class="p-3">—</td>
-                            <td class="p-3">—</td>
-                        </tr>
+              <tr class="border-t border-[#252a32]">
+                <td class="p-3">—</td>
+                <td class="p-3">GALP</td>
+                <td class="p-3">—</td>
+                <td class="p-3">—</td>
+                <td class="p-3">—</td>
+                <td class="p-3">—</td>
+              </tr>
 
-                    </tbody>
+              <tr class="border-t border-[#252a32]">
+                <td class="p-3">—</td>
+                <td class="p-3">AD Galomar</td>
+                <td class="p-3">—</td>
+                <td class="p-3">—</td>
+                <td class="p-3">—</td>
+                <td class="p-3">—</td>
+              </tr>
 
-                </table>
-
-            </div>
-
-        </section>
-
+              <tr class="border-t border-[#252a32]">
+                <td class="p-3">—</td>
+                <td class="p-3">Barcelos Eticol</td>
+                <td class="p-3">—</td>
+                <td class="p-3">—</td>
+                <td class="p-3">—</td>
+                <td class="p-3">—</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
     </main>
 
     <!-- RODAPÉ -->
     <footer class="border-t border-[#252a32] bg-[#0b0f14] p-6">
+      <div
+        class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 sm:flex-row"
+      >
+        <h2 class="text-xl font-bold text-[#e50920]">BasketHub</h2>
 
-        <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 sm:flex-row">
+        <p class="text-sm text-gray-500">Basquetebol português</p>
+      </div>
 
-            <h2 class="text-xl font-bold text-[#e50920]">
-                BasketHub
-            </h2>
-
-            <p class="text-sm text-gray-500">
-                Basquetebol português
-            </p>
-
-        </div>
-
-        <p class="mt-6 text-center text-sm text-gray-500">
-            2026 BasketHub
-        </p>
-
+      <p class="mt-6 text-center text-sm text-gray-500">2026 BasketHub</p>
     </footer>
-
-</body>
+  </body>
 </html>
