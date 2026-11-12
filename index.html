@@ -113,11 +113,13 @@
       <!-- CLASSIFICAÇÃO: tabela com posição, equipa, jogos, vitórias, derrotas e pontos. -->
       <section id="classificacao" class="mt-10">
         <h2 class="mb-6 text-2xl font-bold">
-          <span class="text-red-600"></span>
+          <span class="text-red-600">▪</span>
           Classificação da Proliga
         </h2>
         <!-- Permite deslocar horizontalmente a tabela em ecrãs estreitos, sem partir as colunas. -->
-        <div class="w-full overflow-x-auto">
+        <div
+          class="w-full overflow-x-auto rounded-lg border border-gray-700 bg-gray-900"
+        >
           <table class="w-full min-w-[600px] text-left">
             <thead class="border-b border-gray-700 text-red-600">
               <tr>
@@ -131,49 +133,64 @@
             </thead>
 
             <tbody>
+              <!-- 1.º classificado -->
               <tr class="border-b border-gray-700">
-                <td class="p-3">—</td>
+                <td class="p-3">1</td>
+                <td class="p-3 font-bold">Sangalhos DC</td>
+                <td class="p-3">6</td>
+                <td class="p-3">5</td>
+                <td class="p-3">1</td>
+                <td class="p-3">11</td>
+              </tr>
+
+              <!-- 2.º classificado -->
+              <tr class="border-b border-gray-700">
+                <td class="p-3">2</td>
+                <td class="p-3">Clube dos Galitos</td>
+                <td class="p-3">6</td>
+                <td class="p-3">5</td>
+                <td class="p-3">1</td>
+                <td class="p-3">11</td>
+              </tr>
+
+              <!-- 3.º classificado -->
+              <tr class="border-b border-gray-700">
+                <td class="p-3">3</td>
+                <td class="p-3">SC Lusitânia</td>
+                <td class="p-3">6</td>
+                <td class="p-3">4</td>
+                <td class="p-3">2</td>
+                <td class="p-3">10</td>
+              </tr>
+
+              <!-- 4.º classificado -->
+              <tr class="border-b border-gray-700">
+                <td class="p-3">4</td>
+                <td class="p-3">Sampaense Basket</td>
+                <td class="p-3">6</td>
+                <td class="p-3">4</td>
+                <td class="p-3">2</td>
+                <td class="p-3">10</td>
+              </tr>
+
+              <!-- 5.º classificado -->
+              <tr class="border-b border-gray-700">
+                <td class="p-3">5</td>
+                <td class="p-3">ABC Santo André</td>
+                <td class="p-3">6</td>
+                <td class="p-3">4</td>
+                <td class="p-3">2</td>
+                <td class="p-3">10</td>
+              </tr>
+
+              <!-- Posição da Académica Efapel -->
+              <tr class="border-b border-gray-700">
+                <td class="p-3">16</td>
                 <td class="p-3 font-bold">Académica Efapel</td>
-                <td class="p-3">—</td>
-                <td class="p-3">—</td>
-                <td class="p-3">—</td>
-                <td class="p-3">—</td>
-              </tr>
-
-              <tr class="border-b border-gray-700">
-                <td class="p-3">—</td>
-                <td class="p-3">GALP</td>
-                <td class="p-3">—</td>
-                <td class="p-3">—</td>
-                <td class="p-3">—</td>
-                <td class="p-3">—</td>
-              </tr>
-
-              <tr class="border-b border-gray-700">
-                <td class="p-3">—</td>
-                <td class="p-3">AD Galomar</td>
-                <td class="p-3">—</td>
-                <td class="p-3">—</td>
-                <td class="p-3">—</td>
-                <td class="p-3">—</td>
-              </tr>
-
-              <tr class="border-b border-gray-700">
-                <td class="p-3">—</td>
-                <td class="p-3">Barcelos Eticol</td>
-                <td class="p-3">—</td>
-                <td class="p-3">—</td>
-                <td class="p-3">—</td>
-                <td class="p-3">—</td>
-              </tr>
-
-              <tr>
-                <td class="p-3">—</td>
-                <td class="p-3">Basket Queluz</td>
-                <td class="p-3">—</td>
-                <td class="p-3">—</td>
-                <td class="p-3">—</td>
-                <td class="p-3">—</td>
+                <td class="p-3">6</td>
+                <td class="p-3">0</td>
+                <td class="p-3">6</td>
+                <td class="p-3">6</td>
               </tr>
             </tbody>
           </table>
@@ -191,28 +208,46 @@
         </div>
         <!-- Os cartões ficam empilhados em telemóveis e lado a lado em ecrãs médios. -->
         <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+          <!-- Primeira notícia: Académica -->
           <article class="rounded-lg border border-gray-700 bg-gray-900 p-5">
             <p class="mb-3 text-sm font-bold text-red-600">ACADÉMICA</p>
 
-            <h3 class="mb-3 text-xl font-bold">Notícia</h3>
+            <h3 class="mb-3 text-xl font-bold">
+              Académica perde frente ao Galitos
+            </h3>
 
-            <p class="text-gray-400">descrição.</p>
+            <p class="text-gray-400">
+              A Académica Efapel perdeu por 98-80 frente ao Galitos HELIFLEX, na
+              sexta jornada da Proliga.
+            </p>
           </article>
 
+          <!-- Segunda notícia: Proliga -->
           <article class="rounded-lg border border-gray-700 bg-gray-900 p-5">
             <p class="mb-3 text-sm font-bold text-red-600">PROLIGA</p>
 
-            <h3 class="mb-3 text-xl font-bold">Notícia</h3>
+            <h3 class="mb-3 text-xl font-bold">
+              Sangalhos e Galitos lideram a Proliga
+            </h3>
 
-            <p class="text-gray-400">descrição.</p>
+            <p class="text-gray-400">
+              As duas equipas encontram-se empatadas no topo da classificação,
+              ambas com cinco vitórias em seis jogos.
+            </p>
           </article>
 
+          <!-- Terceira notícia: Basquetebol -->
           <article class="rounded-lg border border-gray-700 bg-gray-900 p-5">
             <p class="mb-3 text-sm font-bold text-red-600">BASQUETEBOL</p>
 
-            <h3 class="mb-3 text-xl font-bold">Notícia</h3>
+            <h3 class="mb-3 text-xl font-bold">
+              Portugal inicia qualificação para o EuroBasket 2027
+            </h3>
 
-            <p class="text-gray-400">descrição.</p>
+            <p class="text-gray-400">
+              A Seleção Nacional Feminina iniciou a segunda fase de qualificação
+              para o Campeonato da Europa de 2027.
+            </p>
           </article>
         </div>
       </section>
@@ -223,12 +258,36 @@
           Jogador em destaque
         </h2>
 
+        <!-- Cartão do jogador em destaque -->
         <div class="rounded-lg border border-gray-700 bg-gray-900 p-6">
+          <!-- Identificação da equipa -->
           <p class="mb-2 text-sm font-bold text-red-600">ACADÉMICA EFAPEL</p>
 
-          <h3 class="mb-3 text-xl font-bold">Plantel da Académica</h3>
+          <!-- Nome e número do jogador -->
+          <h3 class="mb-3 text-2xl font-bold">Te Williams</h3>
 
-          <p class="text-gray-400">dados.</p>
+          <p class="mb-6 text-gray-400">
+            Um dos principais destaques ofensivos da Académica na Proliga, com
+            uma contribuição importante na pontuação da equipa.
+          </p>
+
+          <!-- Estatísticas individuais -->
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+            <div class="rounded-lg border border-gray-700 p-4">
+              <p class="text-sm text-gray-400">Jogos</p>
+              <p class="mt-2 text-2xl font-bold">6</p>
+            </div>
+
+            <div class="rounded-lg border border-gray-700 p-4">
+              <p class="text-sm text-gray-400">Pontos</p>
+              <p class="mt-2 text-2xl font-bold">128</p>
+            </div>
+
+            <div class="rounded-lg border border-gray-700 p-4">
+              <p class="text-sm text-gray-400">Pontos por jogo</p>
+              <p class="mt-2 text-2xl font-bold">21,3</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
